@@ -1,0 +1,66 @@
+export const GALLERY_ARTWORKS = [
+  {
+    id: '01',
+    fileName: 'one.png',
+    title: 'The Queen of the Impossible Kingdom',
+    aspectRatio: 2 / 3,
+    canvasWidth: 1.6,
+    canvasHeight: 2.4,
+    palette: ['#27384a', '#b98266', '#e6c99b'],
+    description: 'In a kingdom no map could ever find, you stand as its brightest wonder. No crown could make you more extraordinary; it only gives the world another reason to admire you.',
+  },
+  {
+    id: '02',
+    fileName: 'two.png',
+    title: 'The Girl of a Thousand Constellations',
+    aspectRatio: 3 / 2,
+    canvasWidth: 2.7,
+    canvasHeight: 1.8,
+    palette: ['#354337', '#d7b47c', '#f0ddbd'],
+    description: 'A thousand constellations gather around you, as if the universe had found its favorite place to shine. Among all those stars, my eyes would still find you first.',
+  },
+  {
+    id: '03',
+    fileName: 'three.png',
+    title: 'The Modern Mona Lisa',
+    aspectRatio: 1,
+    canvasWidth: 2.12,
+    canvasHeight: 2.12,
+    palette: ['#35334b', '#b69acb', '#e9c3b1'],
+    description: 'Some portraits are remembered for centuries; others stay with us for reasons no frame can explain. Your quiet mystery is one I would never grow tired of discovering.',
+  },
+  {
+    id: '04',
+    fileName: 'four.png',
+    title: 'The Golden Kiss',
+    aspectRatio: 1,
+    canvasWidth: 2.12,
+    canvasHeight: 2.12,
+    palette: ['#5b3438', '#d9a77d', '#f1d8b3'],
+    description: "Gold gathers around us until the world beyond falls quiet. It is not the gold that makes this moment precious, but the simple wonder of being close to you.",
+  },
+  {
+    id: '05',
+    fileName: 'five.png',
+    title: 'The Most Important Couple in History',
+    aspectRatio: 4 / 5,
+    canvasWidth: 1.84,
+    canvasHeight: 2.3,
+    palette: ['#273e50', '#8ba6a0', '#e2cfaa'],
+    description: 'A matter of great historical importance, according to this museum. The truth is simpler: two ordinary people can make an extraordinary story by choosing to share it.',
+  },
+  {
+    id: '06',
+    fileName: 'six.png',
+    title: 'Our Future, Still Unpainted',
+    aspectRatio: 16 / 9,
+    canvasWidth: 3.0,
+    canvasHeight: 1.6875,
+    palette: ['#514638', '#bfa26d', '#e8d9bc'],
+    description: 'This canvas is unfinished for a reason: the loveliest parts of our story are still ahead. May every new place, quiet moment, and little adventure become another line worth keeping.',
+  },
+];
+
+export function getGalleryArtworkById(id) {
+  return GALLERY_ARTWORKS.find((artwork) => artwork.id === id) ?? null;
+}
